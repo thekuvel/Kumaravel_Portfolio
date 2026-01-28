@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+/* Tech stack marquee animations */
+
+/* @keyframes slideLoop {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+} */
+
+@keyframes slideRTL {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes slideLTR {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.sliderContainer {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* .slider {
+  display: flex;
+  width: max-content;
+  animation: slideLoop 12s linear infinite;
+  will-change: transform;
+} */
+
+.slider {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Right → Left */
+.slider.rtl {
+  animation: slideRTL 20s linear infinite;
+}
+
+/* Left → Right */
+.slider.ltr {
+  animation: slideLTR 20s linear infinite;
+}
+
+/* ⛔ DO NOT use gap */
+.item {
+  margin-right: 1rem; /* ✅ margin is part of width */
+}
+
+.sliderContainer:hover .slider {
+  animation-play-state: paused;
+}
+
+/* Markdown */
+
+/* .markdown-body {
+  background-color: transparent !important;
+} */
