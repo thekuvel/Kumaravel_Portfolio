@@ -1,45 +1,46 @@
 export default function About() {
   const frontend = [
-    { img: '/icons/react.svg', techName: 'React JS' },
-    { img: '/icons/nextjs.svg', techName: 'Next JS' },
-    { img: '/icons/tailwindcss.svg', techName: 'Tailwind CSS' },
-    { img: '/icons/materialui.svg', techName: 'Material UI' },
+    { img: "/icons/react.svg", techName: "React JS" },
+    { img: "/icons/nextjs.svg", techName: "Next JS" },
+    { img: "/icons/tailwindcss.svg", techName: "Tailwind CSS" },
+    { img: "/icons/materialui.svg", techName: "Material UI" },
     // { img: '/icons/bootstrap5.svg', techName: 'Bootstrap' },
-  ]
+  ];
 
   const backend = [
     // { img: '/icons/expressjs.svg', techName: 'Express Js' },
-    { img: '/icons/graphql.svg', techName: 'GraphQL' },
-    { img: '/icons/nodejs.svg', techName: 'Node JS' },
-    { img: '/icons/python.svg', techName: 'Python' },
+    { img: "/icons/graphql.svg", techName: "GraphQL" },
+    { img: "/icons/nodejs.svg", techName: "Node JS" },
+    { img: "/icons/python.svg", techName: "Python" },
     // { img: '/icons/vercel.svg', techName: 'Vercel' },
     // { img: '/icons/netlify.svg', techName: 'Netlify' },
     // 'JWT',
     // 'AWS',
     // 'Render',
     // 'Supabase',
-  ]
+  ];
 
   const database = [
-    { img: '/icons/mongodb.svg', techName: 'MongoDB' },
-    { img: '/icons/postgresql.svg', techName: 'PostgreSQL' },
-    { img: '/icons/supabase.svg', techName: 'Supa Base' },
+    { img: "/icons/mongodb.svg", techName: "MongoDB" },
+    { img: "/icons/postgresql.svg", techName: "PostgreSQL" },
+    { img: "/icons/supabase.svg", techName: "Supa Base" },
     // { img: '/icons/prisma.svg', techName: 'Prisma' },
     // 'MongoDB', 'PostgreSQL', 'SQL Lite', 'Mongoose', 'Prisma'
-  ]
+  ];
 
   const infrastructure = [
-    { img: '/icons/aws.svg', techName: 'AWS' },
-    { img: '/icons/vercel.svg', techName: 'Vercel' },
-    { img: '/icons/netlify.svg', techName: 'Netlify' },
-    { img: '/icons/flyio.svg', techName: 'Fly.io' },
-    { img: '/icons/render.svg', techName: 'Render' },
-  ]
+    { img: "/icons/aws.svg", techName: "AWS" },
+    { img: "/icons/vercel.svg", techName: "Vercel" },
+    { img: "/icons/netlify.svg", techName: "Netlify" },
+    { img: "/icons/flyio.svg", techName: "Fly.io" },
+    { img: "/icons/render.svg", techName: "Render" },
+  ];
 
   const tools = [
-    { img: '/icons/postman.svg', techName: 'Postman' },
-    { img: '/icons/jira.svg', techName: 'Jira' },
-  ]
+    { img: "/icons/postman.svg", techName: "Postman" },
+    { img: "/icons/jira.svg", techName: "Jira" },
+    { img: "/icons/axway_icon.svg", techName: "Axway" },
+  ];
 
   return (
     <div className="grid gap-8">
@@ -76,6 +77,7 @@ export default function About() {
               <li>Develop front-end, back-end and database</li>
               <li>Write use case</li>
               <li>End to end testing</li>
+              <li>Axway MFT, Embedded Analytics, Sentinel, API's.</li>
             </ul>
           </div>
           {/* Wipro experience */}
@@ -190,5 +192,5 @@ export default function About() {
       </section>
       {/* Certifications */}
     </div>
-  )
+  );
 }

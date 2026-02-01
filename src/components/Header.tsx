@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <header className="relative flex items-center justify-between py-3 ">
@@ -23,9 +23,13 @@ const Header: React.FC = () => {
         <Link to="/projects" className="hover:text-white transition">
           Projects
         </Link>
-        <Link to="/" className="hover:text-white transition">
+        {/*<Link
+          to="https://drive.google.com/file/d/1GM8lybkur8vdY6iQ8g9IzZdJjB-xtjz1/view?usp=sharing"
+          target="_blank"
+          className="hover:text-white transition"
+        >
           Resume
-        </Link>
+        </Link>*/}
       </nav>
 
       {/* Mobile Menu Button */}
@@ -51,14 +55,18 @@ const Header: React.FC = () => {
             <Link to="/" onClick={() => setOpen(false)}>
               Projects
             </Link>
-            <Link to="/" onClick={() => setOpen(false)}>
+            <Link
+              to="https://drive.google.com/file/d/1GM8lybkur8vdY6iQ8g9IzZdJjB-xtjz1/view?usp=sharing"
+              target="_blank"
+              onClick={() => setOpen(false)}
+            >
               Resume
             </Link>
           </div>
         </nav>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,6 +1,6 @@
 # TypeScript
 
-Date: 1 Jan 2026  
+Date: 16 Jan 2026  
 Place: Chennai
 
 TypeScript is a superset of JavaScript.

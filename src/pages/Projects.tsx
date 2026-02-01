@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom'
-import projectsData from './projectsData'
+import { Link } from "react-router-dom";
+import projectsData from "./projectsData";
 
 export default function Projects() {
   return (
     <div className="grid gap-8">
       {projectsData.map((project) => (
-        <section className="grid gap-20 grid-cols-2 lg:col-span-2 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <section
+          key={project.title}
+          className="grid gap-20 grid-cols-2 lg:col-span-2 rounded-2xl border border-white/10 bg-white/5 p-6"
+        >
           <div>
             <img
               className="border border-none rounded"
@@ -48,5 +51,5 @@ export default function Projects() {
         </section>
       ))}
     </div>
-  )
+  );
 }

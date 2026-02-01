@@ -1,37 +1,38 @@
-import { Link } from 'react-router-dom'
-import ViewButton from '../components/ViewButton.tsx'
-import { YearsOfExperienceText } from '../components/YearsOfExperienceText.tsx'
-import projectsData from './projectsData.ts'
+import { Link } from "react-router-dom";
+import ViewButton from "../components/ViewButton.tsx";
+import { YearsOfExperienceText } from "../components/YearsOfExperienceText.tsx";
+import projectsData from "./projectsData.ts";
 
 export default function Home() {
   const frontend = [
-    { img: '/icons/react.svg', techName: 'React JS' },
-    { img: '/icons/nextjs.svg', techName: 'Next JS' },
-    { img: '/icons/tailwindcss.svg', techName: 'Tailwind CSS' },
-    { img: '/icons/materialui.svg', techName: 'Material UI' },
+    { img: "/icons/react.svg", techName: "React JS" },
+    { img: "/icons/nextjs.svg", techName: "Next JS" },
+    { img: "/icons/tailwindcss.svg", techName: "Tailwind CSS" },
+    { img: "/icons/materialui.svg", techName: "Material UI" },
     // { img: '/icons/bootstrap5.svg', techName: 'Bootstrap' },
-  ]
+  ];
 
   const backend = [
     // { img: '/icons/expressjs.svg', techName: 'Express Js' },
-    { img: '/icons/graphql.svg', techName: 'GraphQL' },
-    { img: '/icons/nodejs.svg', techName: 'Node JS' },
-    { img: '/icons/python.svg', techName: 'Python' },
+    { img: "/icons/graphql.svg", techName: "GraphQL" },
+    { img: "/icons/nodejs.svg", techName: "Node JS" },
+    { img: "/icons/axway_icon.svg", techName: "Axway" },
+    { img: "/icons/python.svg", techName: "Python" },
     // { img: '/icons/vercel.svg', techName: 'Vercel' },
     // { img: '/icons/netlify.svg', techName: 'Netlify' },
     // 'JWT',
     // 'AWS',
     // 'Render',
     // 'Supabase',
-  ]
+  ];
 
   const database = [
-    { img: '/icons/mongodb.svg', techName: 'MongoDB' },
-    { img: '/icons/postgresql.svg', techName: 'PostgreSQL' },
-    { img: '/icons/supabase.svg', techName: 'Supa Base' },
+    { img: "/icons/mongodb.svg", techName: "MongoDB" },
+    { img: "/icons/postgresql.svg", techName: "PostgreSQL" },
+    { img: "/icons/supabase.svg", techName: "Supa Base" },
     // { img: '/icons/prisma.svg', techName: 'Prisma' },
     // 'MongoDB', 'PostgreSQL', 'SQL Lite', 'Mongoose', 'Prisma'
-  ]
+  ];
 
   return (
     <div className="grid gap-20">
@@ -64,13 +65,13 @@ export default function Home() {
             Projects
           </Link>
 
-          <Link
+          {/*<Link
             to="/"
             className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm"
           >
             <img src="/icons/cloud-download.svg" className="h-4 w-4" alt="" />
             Download resume
-          </Link>
+          </Link>*/}
         </div>
       </section>
 
@@ -218,5 +219,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
